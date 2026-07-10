@@ -136,6 +136,75 @@ button:hover {
   display: none;
 }
 
+/* Participants list styling */
+.participants {
+  margin-top: 12px;
+}
+
+.participants-header {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+
+.participants-list {
+  list-style: none;
+  padding-left: 0;
+  max-height: 120px;
+  overflow: auto;
+  background-color: #ffffff;
+  border: 1px solid #f0f0f0;
+  padding: 8px;
+  border-radius: 4px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 8px;
+  border-radius: 4px;
+  background: #fafafa;
+}
+
+.participant-email {
+  color: #333;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.participant-delete {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.participant-delete:hover {
+  background: rgba(198,40,40,0.08);
+}
+
+.participants-list li:last-child {
+  border-bottom: none;
+}
+
+.empty-participants {
+  color: #666;
+  font-style: italic;
+  padding: 6px 0;
+}
+
 footer {
   text-align: center;
   margin-top: 30px;
